@@ -30,9 +30,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <nav className="h-20 w-full bg-gray-500 flex items-center">
-          <Navigation/>
+          <Navigation />
         </nav>
-        {children}
+        <main className="w-full">
+          {children}
+        </main>
       </body>
     </html>
   );
